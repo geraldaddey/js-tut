@@ -351,17 +351,75 @@
 
 // -----------CHANGING PAGE CONTENT-------------------
 
-var boxDivs = document.getElementsByClassName("container");
+// var boxDivs = document.getElementsByClassName("container");
 
-var redText = boxDivs[0].getElementsByTagName("h2");
+// var redText = boxDivs[0].getElementsByTagName("h2");
 
-redText[0].innerHTML = "JavaScript Red";
+// redText[0].innerHTML = "JavaScript Red";
 
-var blueText = document.getElementById("bluebox");
-blueText.innerHTML = "JavaScript Blue";
+// var blueText = document.getElementById("bluebox");
+// blueText.innerHTML = "JavaScript Blue";
 
-var greenText = boxDivs[2].getElementsByTagName("span");
-greenText[0].innerHTML = "JavaScript Green";
+// var greenText = boxDivs[2].getElementsByTagName("span");
+// greenText[0].innerHTML = "JavaScript Green";
 
-var greenBox = boxDivs[2].getElementsByTagName("div");
-greenBox[0].onclick();
+// // ---------SETTING ATTRIBUTES-----------
+
+// var title = document.getElementById("help");
+
+// title.setAttribute("style", "position:relative; font-size: 60px;");
+
+// // -----------STYLING ELEMENTS-----------
+
+// title.style.left = "50px";
+
+// title.style.backgroundColor = "blue";
+// title.style.padding = "10px";
+
+// newLi.style.textDecoration = "underline";
+
+// newLi.style.textDecoration = "underline";
+
+// newLi.style.paddingLeft = "10px";
+
+// newLi.style.color = "purple";
+
+// ----------CREATING ELEMENTS-----------
+
+// var linkContainer = document.getElementById("list-container");
+
+// var newA = document.createElement("a");
+
+// var newLi = document.createElement("li");
+
+// -----------ADDING ELEMENTS-------------
+
+// var menu = document.getElementById("list-container");
+
+// var newLi = document.createElement("li");
+
+// menu.appendChild(newLi);
+
+// newLi.style.textDecoration = "underline";
+
+// newLi.style.paddingLeft = "10px";
+
+// newLi.style.color = "purple";
+
+// newLi.innerHTML = "link 6";
+
+// menu.insertBefore(newLi, menu.getElementsByTagName("li")[0]);
+
+// menu.insertBefore(newLi, menu.getElementsByTagName("li")[0]);
+
+// // ----------REMOVING ELEMENTS--------------
+
+// var child = document
+//   .getElementById("list-container")
+//   .getElementsByTagName("li")[3];
+
+// var removed = menu.removeChild(child);
+
+// // if you ever want to insert what you removed, do this
+
+// // menu.appendChild(removed);
