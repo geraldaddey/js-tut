@@ -362,3 +362,6 @@ blueText.innerHTML = "JavaScript Blue";
 
 var greenText = boxDivs[2].getElementsByTagName("span");
 greenText[0].innerHTML = "JavaScript Green";
+
+var greenBox = boxDivs[2].getElementsByTagName("div");
+greenBox[0].onclick();
