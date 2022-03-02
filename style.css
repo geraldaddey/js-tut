@@ -51,6 +51,15 @@
   padding-top: 80px;
 } */
 
+#title {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-top: 20px;
+}
+
 #content {
   background-color: rgba(238, 234, 234, 0.994);
   padding: 20px;
