@@ -1,4 +1,4 @@
-a {
+/* a {
   display: block;
   padding: 10px;
 }
@@ -49,4 +49,37 @@ a {
   text-align: center;
   display: block;
   padding-top: 80px;
+} */
+
+#content {
+  background-color: rgba(238, 234, 234, 0.994);
+  padding: 20px;
+  width: 30%;
+  margin: 0 auto;
+
+  max-height: 250px;
+  overflow: hidden;
+
+  transition: max-height 0.7s ease;
+}
+
+#content.open {
+  max-height: 1000px;
+  transition: max-height 0.5s ease;
+}
+
+#content h2 {
+  text-align: center;
+}
+
+#button {
+  display: block;
+  padding: 5px;
+  background-color: blue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  width: 8%;
+  margin: 20px auto;
+  text-decoration: none;
 }

@@ -423,3 +423,19 @@
 // // if you ever want to insert what you removed, do this
 
 // // menu.appendChild(removed);
+
+var content = document.getElementById("content");
+var button = document.getElementById("button");
+
+button.onclick = function () {
+  if (content.className == "open") {
+    content.className = "";
+    button.innerHTML = "Show More";
+    // Shrink the box
+  } else {
+    content.className = "open";
+    button.innerHTML = "Show Less";
+
+    // Expand the box
+  }
+};
