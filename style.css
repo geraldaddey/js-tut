@@ -51,6 +51,14 @@
   padding-top: 80px;
 } */
 
+#container {
+  display: flex;
+  flex-direction: row;
+  max-height: 1000px;
+  align-items: center;
+  justify-content: space-around;
+}
+
 #title {
   color: black;
   text-align: center;
@@ -63,8 +71,8 @@
 #content {
   background-color: rgba(238, 234, 234, 0.994);
   padding: 20px;
-  width: 30%;
-  margin: 0 auto;
+  width: 500px;
+  margin: 30px;
 
   max-height: 250px;
   overflow: hidden;
@@ -88,7 +96,16 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   text-align: center;
-  width: 8%;
-  margin: 20px auto;
+  width: 80px;
+  margin-left: 230px;
   text-decoration: none;
+}
+
+#message {
+  border: 2px solid black;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 30px;
 }

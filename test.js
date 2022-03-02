@@ -424,24 +424,64 @@
 
 // // menu.appendChild(removed);
 
-function setUpEvents() {
-  var content = document.getElementById("content");
-  var button = document.getElementById("button");
+// -----------WINDOW ON LOAD EVENT----------------
 
-  button.onclick = function () {
-    if (content.className == "open") {
-      content.className = "";
-      button.innerHTML = "Show More";
-      // Shrink the box
-    } else {
-      content.className = "open";
-      button.innerHTML = "Show Less";
+// function setUpEvents() {
+//   var content = document.getElementById("content");
+//   var button = document.getElementById("button");
 
-      // Expand the box
-    }
-  };
+//   button.onclick = function () {
+//     if (content.className == "open") {
+//       content.className = "";
+//       button.innerHTML = "Show More";
+//       // Shrink the box
+//     } else {
+//       content.className = "open";
+//       button.innerHTML = "Show Less";
+
+//       // Expand the box
+//     }
+//   };
+// }
+
+// window.onload = function () {
+//   setUpEvents();
+// };
+
+// --------------TIMERS---------------
+
+// Show the color of the box
+var myMessage = document.getElementById("message");
+var colors = ["red", "blue", "green", "yellow"];
+var counter = 0;
+
+var colorCodeText = document.getElementById("color-code");
+
+function changeColor() {
+  colorCode = myMessage.style.backgroundColor = colors[counter];
+
+  colorCodeText.innerHTML = colors[counter] + " is my color";
+  counter++;
+
+  if (counter >= colors.length) {
+    counter = 0;
+  }
 }
 
-window.onload = function () {
-  setUpEvents();
+var content = document.getElementById("content");
+var button = document.getElementById("button");
+
+button.onclick = function () {
+  if (content.className == "open") {
+    content.className = "";
+    button.innerHTML = "Show More";
+    // Shrink the box
+  } else {
+    content.className = "open";
+    button.innerHTML = "Show Less";
+
+    // Expand the box
+  }
 };
+
+setInterval(changeColor, 3000);
