@@ -51,12 +51,13 @@
   padding-top: 80px;
 } */
 
+/* small screen  */
 #container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-height: 1000px;
   align-items: center;
-  justify-content: space-around;
+  flex-wrap: nowrap;
 }
 
 #title {
@@ -108,4 +109,61 @@
   height: 200px;
   padding: 20px;
   margin: 30px;
+}
+
+#stop-button {
+  display: block;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 30px;
+  width: 30px;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0 auto;
+}
+
+#message.stopped {
+  border: 5px solid black;
+  opacity: 0.5;
+}
+
+#stop-button:hover {
+  background-color: rgb(49, 49, 49);
+}
+
+#form-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#blank-container {
+  margin: 20px;
+}
+
+#blank-container > div {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+#submit {
+  margin: 20px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width: 900px) {
+  /* big screen  */
+  #container {
+    display: flex;
+    flex-direction: row;
+    max-height: 1000px;
+    align-items: center;
+    flex-wrap: none;
+    gap: 20px;
+    justify-content: space-between;
+  }
 }

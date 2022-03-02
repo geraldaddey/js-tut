@@ -454,7 +454,6 @@
 var myMessage = document.getElementById("message");
 var colors = ["red", "blue", "green", "yellow"];
 var counter = 0;
-
 var colorCodeText = document.getElementById("color-code");
 
 function changeColor() {
@@ -467,6 +466,8 @@ function changeColor() {
     counter = 0;
   }
 }
+
+// ---------------ON CLICK EVENT-----------------
 
 var content = document.getElementById("content");
 var button = document.getElementById("button");
@@ -484,4 +485,30 @@ button.onclick = function () {
   }
 };
 
-setInterval(changeColor, 3000);
+var stopTimer = setInterval(changeColor, 3000);
+
+var stopButton = document.getElementById("stop-button");
+
+stopButton.onclick = function () {
+  clearInterval(stopTimer);
+
+  myMessage.className = "stopped";
+};
+
+// ------------------FORMS---------------
+
+// Make borders red on focus and null on blur
+
+// var myForm = document.forms.myForm;
+
+// myForm.name.onfocus = function () {
+//   myForm.name.style.border = "2px solid red";
+// };
+
+// myForm.name.onblur = function () {
+//   myForm.name.style.border = "2px solid green";
+// };
+
+// myForm.email.onfocus = function (params) {
+//   myForm.email, (style.border = "2px solid red");
+// };
