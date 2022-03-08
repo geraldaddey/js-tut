@@ -499,16 +499,24 @@ stopButton.onclick = function () {
 
 // Make borders red on focus and null on blur
 
-// var myForm = document.forms.myForm;
+var myForm = document.forms.myForm;
 
-// myForm.name.onfocus = function () {
-//   myForm.name.style.border = "2px solid red";
-// };
+myForm.name.onfocus = function () {
+  myForm.name.style.border = "2px solid red";
+};
 
-// myForm.name.onblur = function () {
-//   myForm.name.style.border = "2px solid green";
-// };
+myForm.name.onblur = function () {
+  myForm.name.style.border = "2px solid green";
+};
 
-// myForm.email.onfocus = function (params) {
-//   myForm.email, (style.border = "2px solid red");
-// };
+myForm.email.onfocus = function (params) {
+  myForm.email, (style.border = "2px solid red");
+};
+
+myForm.onsubmit = function () {
+  if (myForm.name.value == "") {
+    alert("Please enter a text");
+  } else {
+  }
+  alert("thanks for filling out the form");
+};
