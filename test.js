@@ -513,6 +513,8 @@ myForm.email.onfocus = function (params) {
   myForm.email, (style.border = "2px solid red");
 };
 
+// --------FORM VALIDATION------
+
 myForm.onsubmit = function () {
   if (myForm.name.value == "") {
     alert("Please enter a text");
@@ -520,3 +522,5 @@ myForm.onsubmit = function () {
   }
   alert("thanks for filling out the form");
 };
+
+// -----LEARN JQUERY AND OTHER LIBRARIES NEXT---------
