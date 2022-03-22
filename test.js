@@ -524,3 +524,4 @@ myForm.onsubmit = function () {
 };
 
 // -----LEARN JQUERY AND OTHER LIBRARIES NEXT---------
+// bootstrap, next.js and react.js
